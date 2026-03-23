@@ -16,3 +16,4 @@ This blog showcases my hands-on experience — including system design decisions
 I focus on writing clean, maintainable code and designing systems that scale efficiently.
 
 Feel free to explore my work or connect with me.
+

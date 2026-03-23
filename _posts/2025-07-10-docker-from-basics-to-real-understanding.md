@@ -1,8 +1,6 @@
 ---
 title: "Docker: From Basics to Real Understanding"
 date: 2026-07-10 05:48:00 +0530
-categories: [devops, fundamentals]
-tags: [docker, containers, virtualization, devops-basics]
 ---
 # Docker: From Basics to Real Understanding
 

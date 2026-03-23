@@ -6,12 +6,12 @@ timezone: Asia/Kolkata
 
 # ------------------ IDENTITY ------------------
 
-title: "My Journey"
-tagline: "Software Developer • Cloud & DevOps • AI/ML Enthusiast"
+title: "Om's Tech Blog"
+tagline: "Backend Engineering • System Design • Cloud"
 
 description: >-
-  A blog where I share real-world learnings from building software,
-  along with insights and knowledge gained while exploring new technologies.
+  A technical blog where I share real-world learnings in backend development,
+  microservices architecture, cloud (GCP), and debugging production issues.
 
 url: "https://omnaphade.github.io"
 baseurl: ""
@@ -23,15 +23,15 @@ github:
 
 social:
   name: Om Naphade
-  email: omnaphade0902@gmail.com  
+  email: omnaphade.dev@gmail.com
   links:
     - https://github.com/OmNaphade
-    - https://www.linkedin.com/in/omnaphade/
+    - https://www.linkedin.com/in/your-linkedin
   rss: true
 
 # ------------------ APPEARANCE ------------------
 
-theme_mode:
+theme_mode: dark
 avatar: https://avatars.githubusercontent.com/u/123349518
 toc: true
 

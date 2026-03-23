@@ -1,10 +1,8 @@
 ---
 title: "State Management Mistakes I Made in My First Full-Stack App"
 date: 2025-02-02 20:33:00 +0530
-categories: [frontend, debugging]
-tags: [react, state-management, authentication, bug-fix]
-State Management Mistakes: I Made in My First Full-Stack App
 ---
+State Management Mistakes: I Made in My First Full-Stack App
 
 # When I built my first full-stack application, I thought state management was simple.
 

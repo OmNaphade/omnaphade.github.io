@@ -1,9 +1,8 @@
 ---
 title: "When 'localhost' Broke My Entire Docker Setup"
 date: 2026-02-01 23:11:00 +0530
-categories: [devops, debugging]
-tags: [docker, spring-boot, postgresql, bug-fix]
 ---
+
 # When “localhost” Broke My Entire Docker Setup
 I had a Spring Boot application that worked flawlessly on my local machine.
 Then I moved it to Docker… and everything broke.

@@ -1,8 +1,6 @@
 ---
 title: "FATAL: Invalid TimeZone in PostgreSQL and How I Fixed It"
 date: 2026-03-23 10:00:00 +0530
-categories: [backend, debugging]
-tags: [postgresql, spring-boot, timezone, bug-fix]
 ---
 
 # Fixing PostgreSQL TimeZone Issues in Spring Boot
