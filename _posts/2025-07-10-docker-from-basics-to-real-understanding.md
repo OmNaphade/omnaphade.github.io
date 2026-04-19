@@ -1,6 +1,6 @@
 ---
 title: "Docker: From Basics to Real Understanding"
-date: 2026-07-10 05:48:00 +0530
+date: 2025-07-10 05:48:00 +0530
 ---
 # Docker: From Basics to Real Understanding
 
@@ -224,3 +224,4 @@ To:
 
 Once you understand that shift, Docker stops being confusing — and starts becoming powerful.
 
+{% include comments.html %}

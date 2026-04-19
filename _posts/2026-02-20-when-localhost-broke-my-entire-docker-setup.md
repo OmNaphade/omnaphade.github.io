@@ -62,3 +62,4 @@ That small difference cost hours.
 - Most DevOps issues are mental model problems, not code problems
 - Sometimes the hardest bugs aren’t in your code — they’re in your assumptions.
 
+{% include comments.html %}

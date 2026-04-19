@@ -71,3 +71,4 @@ It’s about keeping your UI and your data in sync.
 That’s where real frontend development begins.
 ---
 
+{% include comments.html %}
