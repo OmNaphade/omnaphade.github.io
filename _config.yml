@@ -6,8 +6,11 @@ timezone: Asia/Kolkata
 
 # ------------------ IDENTITY ------------------
 
-title: "My Journey"
-tagline: "Software Developer • Cloud & DevOps • AI/ML Enthusiast"
+title: "TechEtics"
+tagline: |
+  • Software Developer
+  • Cloud & DevOps
+  • AI/ML Enthusiast
 
 description: >-
   A blog where I share real-world learnings from building software,
@@ -27,7 +30,7 @@ social:
   links:
     - https://github.com/OmNaphade
     - https://www.linkedin.com/in/omnaphade/
-  rss: true
+  # rss: false
 
 # ------------------ APPEARANCE ------------------
 
