@@ -7,10 +7,7 @@ timezone: Asia/Kolkata
 # ------------------ IDENTITY ------------------
 
 title: "TechEtics"
-tagline: |
-  • Software Developer
-  • Cloud & DevOps
-  • AI/ML Enthusiast
+tagline: "Exploring the full spectrum of technology"
 
 description: >-
   A blog where I share real-world learnings from building software,
