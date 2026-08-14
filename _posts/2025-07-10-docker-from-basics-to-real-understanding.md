@@ -1,8 +1,11 @@
 ---
 title: "Docker: From Basics to Real Understanding"
 date: 2025-07-10 05:48:00 +0530
+categories: [DevOps]
+tags: [docker, containers, devops]
+description: "A practical walkthrough of what Docker containers actually are, how they differ from VMs, and the core commands and workflows you'll use daily."
+image: /assets/img/posts/docker-from-basics-to-real-understanding.svg
 ---
-# Docker: From Basics to Real Understanding
 
 When I first started learning Docker, it felt simple.
 Run a container → App works → Done.

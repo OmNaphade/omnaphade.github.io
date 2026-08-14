@@ -1,0 +1,167 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* ==========================================================================
+   TechEtics — brand accent & typography overrides
+   Chirpy exposes all colors as CSS custom properties on `html[data-mode]`;
+   redeclaring them here (after the base theme import above) lets the
+   cascade win without touching the gem's own _sass files.
+   ========================================================================== */
+
+$accent-dark: #38bdf8;
+$accent-dark-2: #818cf8;
+$accent-light: #0284c7;
+$accent-light-2: #6366f1;
+
+html[data-mode='dark'] {
+  --link-color: #{$accent-dark};
+  --toc-highlight: #{$accent-dark};
+  --checkbox-checked-color: #{$accent-dark};
+  --categories-icon-hover-color: #{$accent-dark};
+  --tag-border: rgb(56 189 248 / 35%);
+  --search-tag-bg: rgb(56 189 248 / 10%);
+  --btn-backtotop-color: #{$accent-dark};
+}
+
+html:not([data-mode]) {
+  @media (prefers-color-scheme: dark) {
+    --link-color: #{$accent-dark};
+    --toc-highlight: #{$accent-dark};
+    --checkbox-checked-color: #{$accent-dark};
+    --categories-icon-hover-color: #{$accent-dark};
+    --tag-border: rgb(56 189 248 / 35%);
+    --search-tag-bg: rgb(56 189 248 / 10%);
+    --btn-backtotop-color: #{$accent-dark};
+  }
+}
+
+html[data-mode='light'] {
+  --link-color: #{$accent-light};
+  --toc-highlight: #{$accent-light};
+  --checkbox-checked-color: #{$accent-light};
+  --categories-icon-hover-color: #{$accent-light};
+}
+
+html:not([data-mode]) {
+  @media (prefers-color-scheme: light) {
+    --link-color: #{$accent-light};
+    --toc-highlight: #{$accent-light};
+    --checkbox-checked-color: #{$accent-light};
+    --categories-icon-hover-color: #{$accent-light};
+  }
+}
+
+/* -- Typography: lean on the theme's self-hosted Lato / Source Sans Pro,
+      just push headings toward a sharper, more deliberate feel -- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+#sidebar .site-title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, $accent-dark, $accent-dark-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html[data-mode='light'] #sidebar .site-title,
+html:not([data-mode]) #sidebar .site-title {
+  @media (prefers-color-scheme: light) {
+    background: linear-gradient(135deg, $accent-light, $accent-light-2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* -- Avatar: accent ring + soft glow instead of the flat border -- */
+
+#sidebar #avatar {
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 3px var(--sidebar-bg),
+    0 0 0 5px rgb(56 189 248 / 45%),
+    0 8px 24px rgb(56 189 248 / 20%);
+}
+
+/* -- Post cards: lift on hover with an accent edge, image zoom -- */
+
+#post-list {
+  .card-wrapper {
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+    border-radius: 10px;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 32px rgb(56 189 248 / 12%);
+    }
+  }
+
+  .card {
+    overflow: hidden;
+    border-top: 2px solid transparent;
+    transition: border-color 0.2s ease;
+
+    .preview-img img {
+      transition: transform 0.35s ease;
+    }
+  }
+
+  .card-wrapper:hover .card {
+    border-top-color: $accent-dark;
+
+    .preview-img img {
+      transform: scale(1.04);
+    }
+  }
+
+  .card-title {
+    transition: color 0.15s ease;
+  }
+
+  .card-wrapper:hover .card-title {
+    color: $accent-dark !important;
+  }
+}
+
+/* -- Tags & category chips: pick up the accent border/hover already
+      wired through the CSS variables above; just tighten the shape -- */
+
+.post-tag {
+  border-radius: 999px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+/* -- Code block header: thin accent top-border for a "product" feel -- */
+
+.code-header {
+  border-top: 2px solid rgb(56 189 248 / 45%);
+}
+
+/* -- Buttons & pagination: accent hover instead of generic gray -- */
+
+.pagination .page-link:hover,
+#back-to-top:hover {
+  color: $accent-dark;
+  border-color: rgb(56 189 248 / 45%);
+}

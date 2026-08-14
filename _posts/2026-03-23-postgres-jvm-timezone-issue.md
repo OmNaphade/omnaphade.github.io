@@ -1,9 +1,13 @@
 ---
 title: "FATAL: Invalid TimeZone in PostgreSQL and How I Fixed It"
 date: 2026-03-23 10:00:00 +0530
+categories: [DevOps]
+tags: [postgresql, spring-boot, java, jvm]
+description: "Fixing the 'FATAL: invalid value for parameter TimeZone: Asia/Calcutta' error by aligning both PostgreSQL and JVM timezone settings."
+image: /assets/img/posts/postgres-jvm-timezone-issue.svg
 ---
 
-# Fixing PostgreSQL TimeZone Issues in Spring Boot
+**Fixing PostgreSQL TimeZone Issues in Spring Boot**
 
 While working with PostgreSQL in a Spring Boot application, I ran into this error:
 ***FATAL: invalid value for parameter "TimeZone": "Asia/Calcutta"***

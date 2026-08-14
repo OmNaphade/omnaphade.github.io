@@ -1,10 +1,13 @@
 ---
 title: "State Management Mistakes I Made in My First Full-Stack App"
 date: 2025-02-02 20:33:00 +0530
+categories: [Frontend]
+tags: [react, state-management, javascript]
+description: "Three state management mistakes I made building my first full-stack app, and how React Context fixed the sync problem between UI and auth state."
+image: /assets/img/posts/state-management-mistakes.svg
 ---
-State Management Mistakes: I Made in My First Full-Stack App
 
-# When I built my first full-stack application, I thought state management was simple.
+**When I built my first full-stack application, I thought state management was simple.**
 
 `Login → Store user → Show UI`
 

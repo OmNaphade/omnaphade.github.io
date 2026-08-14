@@ -1,9 +1,12 @@
 ---
 title: "When 'localhost' Broke My Entire Docker Setup"
-date: 2026-02-01 23:11:00 +0530
+date: 2026-02-20 23:11:00 +0530
+categories: [DevOps]
+tags: [docker, spring-boot, postgresql, networking]
+description: "Why 'localhost' inside a Docker container doesn't mean what you think, and how Docker Compose service-name DNS fixes cross-container database connections."
+image: /assets/img/posts/localhost-broke-docker.svg
 ---
 
-# When “localhost” Broke My Entire Docker Setup
 I had a Spring Boot application that worked flawlessly on my local machine.
 Then I moved it to Docker… and everything broke.
 ***The app couldn’t connect to PostgreSQL***
